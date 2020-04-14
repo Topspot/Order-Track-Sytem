@@ -1,0 +1,224 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+    background-color: #eae8e8;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+/* Adding Order block */
+.add-order-block{
+    background-color: #fff;
+    padding: 0px !important;
+    /* Safari*/
+    -webkit-border-radius: 10px !important;
+    /* Firefox  */
+    -moz-border-radius: 10px !important;
+    /* Opera , IE , Safari , Chrome, Firefox , iOS , Android  */
+    border-radius: 10px !important;
+}
+.fa-address-card, .fa-edit, .fa-globe-europe{
+    color: #6b99ed;
+}
+.add-order-block .panel-heading{
+    /* Safari*/
+    -webkit-border-radius: 10px 10px 0px 0px !important;
+    /* Firefox  */
+    -moz-border-radius: 10px 10px 0px 0px !important;
+    /* Opera , IE , Safari , Chrome, Firefox , iOS , Android  */
+    border-radius: 10px 10px 0px 0px !important;
+}
+.panel-heading{
+    background-color: #fff !important;
+}
+span.required{
+    color: red;
+
+}
+.lightblue{
+    background-color: lightblue !important;
+}
+.kv-date-remove{
+    display: none;
+}
+#orders-tables {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+#orders-tables th {
+    cursor: pointer;
+}
+
+#orders-tables th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#orders-tables tr {
+   border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+#status{
+    float: left;
+    width: 72%;
+    margin-right: 6px;
+}
+.delete-btn{
+    float: left;
+    bold:solid;
+    /* Safari*/
+    -webkit-border-radius: 50%;
+    /* Firefox  */
+    -moz-border-radius:50%;
+    /* Opera , IE , Safari , Chrome, Firefox , iOS , Android  */
+    border-radius:50%;
+}
+
+/*
+ *  Scroll style
+ */
+
+#style-4::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+#style-4{
+    height: 500px;
+    overflow-y: scroll;
+}
+h3{
+    color: #abacaf;
+    margin-top: 2px !important;
+    margin-bottom: 0px !important;
+    display: inline-block;
+}
+.existing-orders .panel-body, .map-block .panel-body{
+    padding: 0px;
+}
+#address-map{
+    width: 100%; height: 1152px;
+}
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
